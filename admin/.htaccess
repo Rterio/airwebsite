@@ -1,0 +1,20 @@
+# ----------------------------------------------------------------------
+#  Éditeur de nouvelles
+# ----------------------------------------------------------------------
+DirectoryIndex index.php
+Options -Indexes
+
+# Ne pas mettre l'éditeur en cache
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-store"
+  Header set X-Frame-Options "DENY"
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "same-origin"
+</IfModule>
+
+# SÉCURITÉ SUPPLÉMENTAIRE (recommandé) : limiter l'éditeur au réseau de
+# l'Université Laval (sur le campus ou par le VPN). Demandez à la DTI les
+# plages d'adresses exactes, puis retirez les # devant les lignes ci-dessous.
+# <RequireAny>
+#   Require ip 132.203.0.0/16
+# </RequireAny>

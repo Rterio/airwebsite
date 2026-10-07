@@ -1,0 +1,48 @@
+{
+  "nouvelles": [
+    {
+      "publiee": true,
+      "categorie": "equipe",
+      "date": "2026-10-02",
+      "titre_fr": "Création d'un site web",
+      "texte_fr": "Site web créé",
+      "image": "assets/nouvelles/capture-d’écran-2026-10-01-133809.png"
+    },
+    {
+      "image_alt": "",
+      "lien": "https://doi.org/10.2147/JAA.S547949",
+      "date": "2025-12-01",
+      "texte_en": "Jérémy Laroche's master's research, on inflammatory markers in adults with respiratory symptoms but normal spirometry, is now published in the *Journal of Asthma and Allergy*. Congratulations, Jérémy!",
+      "texte_fr": "Les travaux de maîtrise de Jérémy Laroche, sur les marqueurs de l'inflammation chez les adultes qui ont des symptômes respiratoires mais une spirométrie normale, sont maintenant publiés dans le *Journal of Asthma and Allergy*. Félicitations Jérémy!",
+      "titre_en": "Jérémy Laroche publishes his master's results",
+      "categorie": "publication",
+      "titre_fr": "Jérémy Laroche publie les résultats de sa maîtrise",
+      "publiee": true,
+      "image": ""
+    },
+    {
+      "image_alt": "",
+      "lien": "https://www.iucpq.ca/linstitut-brille-au-prix-hippocrate-2025/",
+      "date": "2025-06-01",
+      "texte_en": "[EXAMPLE TO VERIFY: exact date and text.] Our asthma exacerbation assessment clinic received the innovation award at the 2025 Prix Hippocrate.",
+      "texte_fr": "[EXEMPLE À VÉRIFIER : date exacte et texte.] Notre clinique d'évaluation des exacerbations de l'asthme a été récompensée dans la catégorie innovation du Prix Hippocrate 2025.",
+      "titre_en": "AllianC5 clinic wins the 2025 Prix Hippocrate",
+      "categorie": "prix",
+      "titre_fr": "La clinique AllianC5 remporte le Prix Hippocrate 2025",
+      "publiee": false,
+      "image": ""
+    },
+    {
+      "image_alt": "",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/38767248/",
+      "date": "2024-05-01",
+      "texte_en": "Our team contributed to the world's first clinical trial on early detection and treatment of undiagnosed asthma and COPD. The results show that finding and treating these people sooner improves their symptoms and quality of life.",
+      "texte_fr": "Notre équipe a contribué au premier essai clinique au monde sur le dépistage et le traitement précoces de l'asthme et de la MPOC non diagnostiqués. Les résultats montrent que repérer et traiter ces personnes plus tôt améliore leurs symptômes et leur qualité de vie.",
+      "titre_en": "UCAP study published in the New England Journal of Medicine",
+      "categorie": "publication",
+      "titre_fr": "L'étude UCAP publiée dans le New England Journal of Medicine",
+      "publiee": true,
+      "image": ""
+    }
+  ]
+}

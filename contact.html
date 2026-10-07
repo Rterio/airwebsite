@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Asthma Innovative Research</title>
+  <meta name="description" content="Écrivez au laboratoire Andréanne Côté, Centre de recherche de l'IUCPQ – Université Laval : participation aux études, études supérieures, collaborations.">
+
+  <link rel="icon" href="assets/logo-lungs.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/site-header.js" defer></script>
+  <script src="js/site-footer.js" defer></script>
+  <script src="js/contact-form.js" defer></script>
+</head>
+<body>
+
+  <site-header active="contact" base="./"></site-header>
+
+  <main id="contenu">
+
+    <!-- ===== Bandeau ===== -->
+    <section class="bandeau" aria-labelledby="titre-page">
+      <svg class="heros__trace" viewBox="0 0 1440 400" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 330 C 80 330, 110 60, 180 60 C 260 60, 330 300, 520 330 C 600 340, 640 330, 720 330 C 800 330, 830 110, 900 110 C 980 110, 1060 300, 1240 330 C 1320 340, 1380 330, 1440 330"/>
+      </svg>
+      <div class="conteneur" style="position: relative;">
+        <nav class="fil-ariane" aria-label="Fil d'Ariane">
+          <a href="index.html">Accueil</a><span aria-hidden="true">/</span>Contact
+        </nav>
+        <h1 id="titre-page">Nous joindre</h1>
+        <p>
+          Une question sur nos études, nos projets ou une possibilité de collaboration?
+          Écrivez-nous, nous vous répondrons rapidement.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="conteneur contact">
+
+        <!-- ===== Aiguillage : pages dédiées ===== -->
+        <nav class="aiguillage" aria-label="Vous cherchez plutôt">
+          <a class="aiguillage__lien" href="participer.html">
+            <span class="aiguillage__titre">Participer à une étude</span>
+            <span class="aiguillage__texte">Nos projets en cours et le déroulement d'une participation.</span>
+            <span class="aiguillage__action">Comment participer</span>
+          </a>
+          <a class="aiguillage__lien" href="joindre.html">
+            <span class="aiguillage__titre">Faire vos études avec nous</span>
+            <span class="aiguillage__texte">Les offres à la maîtrise, au doctorat et en stage, et comment postuler.</span>
+            <span class="aiguillage__action">Voir les offres et postuler</span>
+          </a>
+        </nav>
+
+        <!-- ===== Formulaire ===== -->
+        <div class="formulaire">
+          <h2>Écrivez-nous</h2>
+          <p class="formulaire__intro">Les champs marqués « facultatif » peuvent être laissés vides.</p>
+
+          <div class="avertissement" role="note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 16.5v.5"/>
+            </svg>
+            <p>
+              Ce formulaire ne sert pas aux urgences ni aux avis médicaux. En cas d'urgence,
+              composez le <strong>911</strong>. Pour une question de santé, communiquez avec
+              Info-Santé au <strong>811</strong>. N'inscrivez pas de renseignements médicaux
+              détaillés dans votre message.
+            </p>
+          </div>
+
+          <form id="formulaire-contact" novalidate>
+            <div class="champs">
+              <div class="champ">
+                <label for="nom">Nom</label>
+                <input id="nom" name="nom" type="text" autocomplete="name" required>
+              </div>
+
+              <div class="champ">
+                <label for="courriel">Courriel</label>
+                <input id="courriel" name="courriel" type="email" autocomplete="email" required>
+              </div>
+
+              <div class="champ champ--large">
+                <label for="motif">Objet de votre message</label>
+                <select id="motif" name="motif" required aria-describedby="indice-motif">
+                  <option value="participation">Participer à une étude</option>
+                  <option value="etudes">Études supérieures ou stage</option>
+                  <option value="collaboration">Collaboration de recherche</option>
+                  <option value="medias">Demande des médias</option>
+                  <option value="autre">Autre question</option>
+                </select>
+                <div id="indice-motif" aria-live="polite">
+                  <p class="indice" data-motif="participation" hidden>
+                  Vous êtes au bon endroit. Indiquez simplement comment vous joindre et le meilleur moment
+                  pour vous appeler. Notre équipe vérifiera avec vous, de façon confidentielle, à quels projets
+                  vous pourriez participer.
+                  </p>
+                  <p class="indice" data-motif="etudes" hidden>
+                  Pour postuler, envoyez plutôt votre CV et vos relevés de notes par courriel
+                  (voir <a href="joindre.html">Joindre l'équipe</a>). Ce formulaire sert aux questions.
+                  </p>
+                </div>
+              </div>
+
+              <div class="champ champ--large">
+                <label for="organisation">Organisation <span class="facultatif">(facultatif)</span></label>
+                <input id="organisation" name="organisation" type="text" autocomplete="organization">
+              </div>
+
+              <div class="champ champ--large">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+
+              <div class="case">
+                <input id="consentement" name="consentement" type="checkbox" required>
+                <label for="consentement">
+                  J'accepte que mes coordonnées soient utilisées uniquement pour répondre à ce message.
+                </label>
+              </div>
+              <p class="champ--large aide" style="margin:0; grid-column: 1 / -1; font-size: .9rem; color: var(--encre-douce);">
+                Vos renseignements servent uniquement à répondre à votre message. Ils sont transmis par courriel à l'équipe du laboratoire, ne sont pas conservés sur le site et sont supprimés une fois votre demande traitée. <a href="confidentialite.html">Politique de confidentialité</a>
+              </p>
+              <!-- Piège à robots : ne pas retirer -->
+              <div class="piege" aria-hidden="true">
+                <label for="botcheck">Ne pas remplir</label>
+                <input id="botcheck" name="botcheck" type="checkbox" tabindex="-1" autocomplete="off">
+              </div>
+            </div>
+
+            <div class="formulaire__envoi">
+              <button class="bouton bouton--plein" type="submit">Envoyer le message</button>
+            </div>
+
+            <div id="statut-formulaire" class="statut" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <!-- ===== Coordonnées ===== -->
+        <aside class="coordonnees" aria-label="Coordonnées">
+
+          <div class="bloc-info">
+            <h2>Adresse</h2>
+            <address>
+              Centre de recherche de l'IUCPQ<br>
+              <span class="a-completer">[Pavillon, local]</span><br>
+              2725, chemin Sainte-Foy<br>
+              Québec (Québec) G1V 4G5
+            </address>
+            <p>
+              <a href="https://www.google.com/maps/search/?api=1&query=2725+chemin+Sainte-Foy+Qu%C3%A9bec" rel="noopener">Obtenir l'itinéraire</a>
+            </p>
+          </div>
+
+          <div class="bloc-info">
+            <h2>Par téléphone ou courriel</h2>
+            <p>
+              <a href="tel:+14186568711">418 656-8711</a>
+              <span class="a-completer">[poste]</span><br>
+              <a href="mailto:courriel@exemple.ca">[À compléter : courriel]</a>
+            </p>
+          </div>
+
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <site-footer base="./"></site-footer>
+
+</body>
+</html>

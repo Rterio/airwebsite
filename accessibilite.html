@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibilité | Asthma Innovative Research</title>
+  <meta name="description" content="L'engagement du laboratoire Andréanne Côté pour un site accessible à toutes et à tous.">
+
+  <link rel="icon" href="./assets/logo-lungs.png">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <script src="./js/site-header.js" defer></script>
+  <script src="./js/site-footer.js" defer></script>
+</head>
+<body>
+
+  <site-header base="./"></site-header>
+
+  <main id="contenu">
+
+    <section class="bandeau" aria-labelledby="titre-page">
+      <svg class="heros__trace" viewBox="0 0 1440 400" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 330 C 80 330, 110 60, 180 60 C 260 60, 330 300, 520 330 C 600 340, 640 330, 720 330 C 800 330, 830 110, 900 110 C 980 110, 1060 300, 1240 330 C 1320 340, 1380 330, 1440 330"/>
+      </svg>
+      <div class="conteneur" style="position: relative;">
+        <nav class="fil-ariane" aria-label="Fil d'Ariane">
+          <a href="index.html">Accueil</a><span aria-hidden="true">/</span>Accessibilité
+        </nav>
+        <h1 id="titre-page">Accessibilité</h1>
+        <p>Notre engagement pour un site que tout le monde peut consulter, et comment nous signaler un problème.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="conteneur page-texte">
+
+        <div class="en-bref">
+          <h2>Notre engagement</h2>
+          <p style="margin:0">
+            Nous voulons que toutes les personnes puissent consulter ce site, y compris celles qui naviguent au clavier,
+            utilisent un lecteur d'écran, agrandissent le texte ou ont une vision réduite. Si quelque chose vous empêche
+            d'accéder à un contenu, <a href="#signaler">dites-le-nous</a> : nous corrigerons le problème ou vous fournirons
+            l'information autrement.
+          </p>
+        </div>
+
+        <h2>Norme visée</h2>
+        <p>
+          Le site vise la conformité au <a href="https://www.quebec.ca/gouvernement/ministeres-organismes/cybersecurite-numerique/publications/standard-accessibilite-sites-web" rel="noopener">Standard sur l'accessibilité des sites Web</a>
+          du gouvernement du Québec, qui s'appuie sur les Règles pour l'accessibilité des contenus Web (WCAG) du W3C,
+          niveau AA.
+        </p>
+
+        <h2>Ce qui a été mis en place</h2>
+        <ul>
+          <li><strong>Navigation au clavier :</strong> tous les liens, menus, boutons et champs sont accessibles au clavier,
+            avec un contour bien visible sur l'élément actif. Un lien « Aller au contenu » permet de passer directement
+            au contenu principal.</li>
+          <li><strong>Structure claire :</strong> chaque page a des titres hiérarchisés et des zones identifiées
+            (en-tête, navigation, contenu, pied de page), pour faciliter la navigation avec un lecteur d'écran.</li>
+          <li><strong>Contrastes :</strong> les couleurs du texte et des boutons ont été choisies pour offrir un contraste suffisant.</li>
+          <li><strong>Images :</strong> les images porteuses d'information ont un texte de remplacement; les images décoratives
+            sont ignorées par les lecteurs d'écran.</li>
+          <li><strong>Formulaire :</strong> chaque champ a une étiquette, les champs facultatifs sont indiqués, et les messages
+            d'erreur sont affichés sous le champ concerné et annoncés aux lecteurs d'écran.</li>
+          <li><strong>Agrandissement :</strong> le texte peut être agrandi jusqu'à 200 % et le site s'adapte aux téléphones
+            et aux tablettes sans perte de contenu.</li>
+          <li><strong>Mouvement :</strong> les animations sont désactivées si votre appareil est réglé pour réduire les mouvements.</li>
+          <li><strong>Lisibilité :</strong> les polices ont été choisies pour leur lisibilité, et les textes destinés aux patients
+            évitent le jargon autant que possible.</li>
+          <li><strong>Deux langues :</strong> tout le site est offert en français et en anglais, et la langue de chaque page
+            est déclarée pour les lecteurs d'écran.</li>
+        </ul>
+
+        <h2>Limites connues</h2>
+        <ul>
+          <li>Certaines images publiées dans les nouvelles, comme des affiches contenant du texte, peuvent ne pas être
+            entièrement décrites. Le texte de la nouvelle reprend alors l'information essentielle.</li>
+          <li>Les sites externes vers lesquels nous renvoyons (articles scientifiques, registres d'études) ne relèvent pas
+            de nous et peuvent ne pas être accessibles.</li>
+          <li><span class="a-completer">[À mettre à jour : le site n'a pas encore fait l'objet d'une évaluation complète de l'accessibilité. Indiquez ici la date et les résultats de l'évaluation une fois réalisée.]</span></li>
+        </ul>
+
+        <h2 id="signaler">Signaler un problème ou demander un autre format</h2>
+        <p>
+          Si vous éprouvez une difficulté à utiliser le site ou si vous avez besoin d'un contenu dans un autre format,
+          écrivez-nous par le <a href="contact.html?motif=autre">formulaire de contact</a>, à
+          <a href="mailto:courriel@exemple.ca"><span class="a-completer">[À compléter : courriel du laboratoire]</span></a>,
+          ou appelez-nous au <a href="tel:+14186568711">418 656-8711</a> <span class="a-completer">[poste]</span>.
+        </p>
+        <p>Précisez la page et le problème rencontré. Nous vous répondrons dans un délai de <span class="a-completer">[À compléter : p. ex. 5 jours ouvrables]</span>.</p>
+
+        <p class="maj">Dernière révision : <span class="a-completer">[À compléter : date]</span></p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <site-footer base="./"></site-footer>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nouvelles | Asthma Innovative Research</title>
+  <meta name="description" content="Les nouvelles du laboratoire Andréanne Côté : publications, prix, congrès et vie d'équipe.">
+
+  <link rel="icon" href="./assets/logo-lungs.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <script src="./js/site-header.js" defer></script>
+  <script src="./js/site-footer.js" defer></script>
+  <script src="./js/nouvelles.js" defer></script>
+</head>
+<body>
+
+  <site-header active="nouvelles" base="./"></site-header>
+
+  <main id="contenu">
+
+    <section class="bandeau" aria-labelledby="titre-page">
+      <svg class="heros__trace" viewBox="0 0 1440 400" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 330 C 80 330, 110 60, 180 60 C 260 60, 330 300, 520 330 C 600 340, 640 330, 720 330 C 800 330, 830 110, 900 110 C 980 110, 1060 300, 1240 330 C 1320 340, 1380 330, 1440 330"/>
+      </svg>
+      <div class="conteneur" style="position: relative;">
+        <nav class="fil-ariane" aria-label="Fil d'Ariane">
+          <a href="index.html">Accueil</a><span aria-hidden="true">/</span>Nouvelles
+        </nav>
+        <h1 id="titre-page">Nouvelles</h1>
+        <p>Publications, distinctions, congrès et vie d'équipe : ce qui se passe au laboratoire.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="titre-page">
+      <div class="conteneur">
+        <div id="filtres-nouvelles" class="filtres-nouvelles" role="group"></div>
+        <div id="liste-nouvelles" class="liste-nouvelles-cms" data-base="./" aria-live="polite">
+          <noscript><p class="nouvelles-message">Activez JavaScript pour afficher les nouvelles.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <site-footer base="./"></site-footer>
+
+</body>
+</html>

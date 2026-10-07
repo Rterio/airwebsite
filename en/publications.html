@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications | Asthma Innovative Research</title>
+  <meta name="description" content="Scientific publications by Dr. Andréanne Côté and her team: severe asthma, biomarkers, detection of asthma and COPD, chronic cough.">
+
+  <link rel="icon" href="../assets/logo-lungs.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <script src="../js/site-header.js" defer></script>
+  <script src="../js/site-footer.js" defer></script>
+  <script src="../js/publications.js" defer></script>
+</head>
+<body>
+
+  <site-header active="publications" base="../"></site-header>
+
+  <main id="contenu">
+
+    <section class="bandeau" aria-labelledby="titre-page">
+      <svg class="heros__trace" viewBox="0 0 1440 400" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 330 C 80 330, 110 60, 180 60 C 260 60, 330 300, 520 330 C 600 340, 640 330, 720 330 C 800 330, 830 110, 900 110 C 980 110, 1060 300, 1240 330 C 1320 340, 1380 330, 1440 330"/>
+      </svg>
+      <div class="conteneur" style="position: relative;">
+        <nav class="fil-ariane" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span aria-hidden="true">/</span>Publications
+        </nav>
+        <h1 id="titre-page">Publications</h1>
+        <p>Scientific articles by Dr. Andréanne Côté and her team. Dr. Côté's name is highlighted in the author lists.</p>
+        <div class="liens-profil" style="margin-top: 1.5rem;">
+          <a href="#">Google Scholar</a>
+          <a href="https://orcid.org/0000-0001-5653-4931" rel="noopener">ORCID</a>
+          <a href="https://www.iucpq.ca/chercheurs-et-chercheuses/dr-andreanne-cote/" rel="noopener">IUCPQ profile</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="groupe section--blanche" aria-labelledby="titre-choisies">
+      <div class="conteneur">
+        <div class="groupe__tete">
+          <h2 id="titre-choisies">Selected publications</h2>
+          <p>A few landmark papers from the team</p>
+        </div>
+        <ol id="publications-choisies" class="publications publications--choisies"></ol>
+      </div>
+    </section>
+
+    <section class="groupe" aria-labelledby="titre-toutes">
+      <div class="conteneur">
+        <div class="groupe__tete">
+          <h2 id="titre-toutes">All publications</h2>
+          <p>Since 2018, newest first</p>
+        </div>
+
+        <div class="outils-pubs" role="search">
+          <div class="champ">
+            <label for="recherche-pubs">Search</label>
+            <input id="recherche-pubs" type="search" placeholder="Title, author, journal…">
+          </div>
+          <div class="champ">
+            <label for="annee-pubs">Year</label>
+            <select id="annee-pubs"></select>
+          </div>
+          <div class="case">
+            <input id="dirigees-pubs" type="checkbox">
+            <label for="dirigees-pubs">Led by Dr. Côté</label>
+          </div>
+        </div>
+
+        <p id="compteur-pubs" class="compteur-pubs" aria-live="polite"></p>
+        <div id="liste-publications">
+          <noscript><p>Turn on JavaScript to see the list, or visit Dr. Côté's profile on the IUCPQ website.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <site-footer base="../"></site-footer>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Asthma Innovative Research</title>
+  <meta name="description" content="Contact the Andréanne Côté Lab at the IUCPQ Research Centre – Université Laval: study participation, graduate studies, collaborations.">
+
+  <link rel="icon" href="../assets/logo-lungs.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <script src="../js/site-header.js" defer></script>
+  <script src="../js/site-footer.js" defer></script>
+  <script src="../js/contact-form.js" defer></script>
+</head>
+<body>
+
+  <site-header active="contact" base="../"></site-header>
+
+  <main id="contenu">
+
+    <!-- ===== Banner ===== -->
+    <section class="bandeau" aria-labelledby="titre-page">
+      <svg class="heros__trace" viewBox="0 0 1440 400" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 330 C 80 330, 110 60, 180 60 C 260 60, 330 300, 520 330 C 600 340, 640 330, 720 330 C 800 330, 830 110, 900 110 C 980 110, 1060 300, 1240 330 C 1320 340, 1380 330, 1440 330"/>
+      </svg>
+      <div class="conteneur" style="position: relative;">
+        <nav class="fil-ariane" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span aria-hidden="true">/</span>Contact
+        </nav>
+        <h1 id="titre-page">Contact us</h1>
+        <p>
+          A question about our studies, our projects or a possible collaboration?
+          Write to us and we'll get back to you quickly.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="conteneur contact">
+
+        <!-- ===== Aiguillage : pages dédiées ===== -->
+        <nav class="aiguillage" aria-label="Looking for something else?">
+          <a class="aiguillage__lien" href="participer.html">
+            <span class="aiguillage__titre">Taking part in a study</span>
+            <span class="aiguillage__texte">Our current projects and how participation works.</span>
+            <span class="aiguillage__action">How to take part</span>
+          </a>
+          <a class="aiguillage__lien" href="joindre.html">
+            <span class="aiguillage__titre">Studying with us</span>
+            <span class="aiguillage__texte">Master's, PhD and internship openings, and how to apply.</span>
+            <span class="aiguillage__action">See openings and apply</span>
+          </a>
+        </nav>
+
+        <!-- ===== Form ===== -->
+        <div class="formulaire">
+          <h2>Send us a message</h2>
+          <p class="formulaire__intro">Fields marked "optional" can be left blank.</p>
+
+          <div class="avertissement" role="note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 16.5v.5"/>
+            </svg>
+            <p>
+              This form is not for emergencies or medical advice. In an emergency,
+              call <strong>911</strong>. For a health question, call Info-Santé at
+              <strong>811</strong>. Please don't include detailed medical information
+              in your message.
+            </p>
+          </div>
+
+          <form id="formulaire-contact" novalidate>
+            <div class="champs">
+              <div class="champ">
+                <label for="nom">Name</label>
+                <input id="nom" name="nom" type="text" autocomplete="name" required>
+              </div>
+
+              <div class="champ">
+                <label for="courriel">Email</label>
+                <input id="courriel" name="courriel" type="email" autocomplete="email" required>
+              </div>
+
+              <div class="champ champ--large">
+                <label for="motif">What is your message about?</label>
+                <select id="motif" name="motif" required aria-describedby="indice-motif">
+                  <option value="participation">Taking part in a study</option>
+                  <option value="etudes">Graduate studies or internship</option>
+                  <option value="collaboration">Research collaboration</option>
+                  <option value="medias">Media request</option>
+                  <option value="autre">Other question</option>
+                </select>
+                <div id="indice-motif" aria-live="polite">
+                  <p class="indice" data-motif="participation" hidden>
+                  You're in the right place. Just tell us how to reach you and the best time to call.
+                  Our team will confidentially check with you which projects you could take part in.
+                  </p>
+                  <p class="indice" data-motif="etudes" hidden>
+                  To apply, please email your CV and transcripts instead
+                  (see <a href="joindre.html">Join the team</a>). This form is for questions.
+                  </p>
+                </div>
+              </div>
+
+              <div class="champ champ--large">
+                <label for="organisation">Organization <span class="facultatif">(optional)</span></label>
+                <input id="organisation" name="organisation" type="text" autocomplete="organization">
+              </div>
+
+              <div class="champ champ--large">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+
+              <div class="case">
+                <input id="consentement" name="consentement" type="checkbox" required>
+                <label for="consentement">
+                  I agree that my contact information will be used only to reply to this message.
+                </label>
+              </div>
+
+              <!-- Spam trap: do not remove -->
+              <div class="piege" aria-hidden="true">
+                <label for="botcheck">Do not fill in</label>
+                <input id="botcheck" name="botcheck" type="checkbox" tabindex="-1" autocomplete="off">
+              </div>
+            </div>
+
+            <div class="formulaire__envoi">
+              <button class="bouton bouton--plein" type="submit">Send message</button>
+            </div>
+
+            <div id="statut-formulaire" class="statut" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <!-- ===== Contact details ===== -->
+        <aside class="coordonnees" aria-label="Contact details">
+
+          <div class="bloc-info">
+            <h2>Address</h2>
+            <address>
+              IUCPQ Research Centre<br>
+              <span class="a-completer">[Pavilion, room]</span><br>
+              2725 chemin Sainte-Foy<br>
+              Québec, QC G1V 4G5
+            </address>
+            <p>
+              <a href="https://www.google.com/maps/search/?api=1&query=2725+chemin+Sainte-Foy+Qu%C3%A9bec" rel="noopener">Get directions</a>
+            </p>
+          </div>
+
+          <div class="bloc-info">
+            <h2>By phone or email</h2>
+            <p>
+              <a href="tel:+14186568711">418 656-8711</a>
+              <span class="a-completer">[ext.]</span><br>
+              <a href="mailto:courriel@exemple.ca">[To complete: email]</a>
+            </p>
+          </div>
+
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <site-footer base="../"></site-footer>
+
+</body>
+</html>
