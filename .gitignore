@@ -1,6 +1,6 @@
-   # Fichiers privés : ne jamais publier sur GitHub
-   admin/prive/config.php
-   admin/prive/sauvegardes/
-   admin/prive/tentatives.json
-   prive/config-contact.php
-   prive/limites-contact.json
+# Fichiers privés : ne jamais publier sur GitHub
+admin/prive/config.php
+admin/prive/sauvegardes/
+admin/prive/tentatives.json
+prive/config-contact.php
+prive/limites-contact.json
